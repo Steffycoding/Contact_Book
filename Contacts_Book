@@ -1,0 +1,24 @@
+ elif choice == "2":
+            contact_id = input("Enter Contact ID to edit: ")
+            name = input("Enter New Name: ")
+            address = input("Enter New Address: ")
+            phone_number = input("Enter New Phone Number: ")
+            email = input("Enter New Email: ")
+            edit_contact(contact_id, name, address, phone_number, email)
+            print("Contact edited successfully!")
+
+        elif choice == "3":
+            contact_id = input("Enter Contact ID to delete: ")
+            delete_contact(contact_id)
+            print("Contact deleted successfully!")
+
+        elif choice == "4":
+            display_contacts()
+
+        elif choice == "5":
+            print("Goodbye!")
+            break
+
+        else:
+            print("Invalid choice. Please enter a number between 1 and 5.")
+
